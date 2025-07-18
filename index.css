@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    all: unset;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    all: initial
+}
+
+/* Header Bölümü */
+.header-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.witflix-logo {
+    height: 50px;
+    width: auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 5%;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 50px;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: red;
+    transition: color 0.3s;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-right: 5%;
+}
+
+/* Nav'lar icin efekt */
+.header-nav {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-nav a {
+    padding: 15px 0;
+    animation: 1s slideUp ease alternate .5s;
+    position: relative;
+}
+
+.header-nav a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    left: 50%;
+    bottom: 10px;
+    background: #bf2e2e;
+    transition: all .1s ease;
+    transform: translateX(-50%);
+}
+
+.header-nav a:hover:before {
+    width: 100%;
+}
+
+.search-box {
+    padding: 10px;
+    margin-right: 5%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    position: relative;
+    left: 10%;
+    border-radius: 10px;
+}
+
+.search-box:focus {
+    border-color: #007BFF;
+    transition: 0.9s;
+}
+
+.search-icon {
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+    right: 11%;
+}
+
+.notifications,
+.avatar {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    border-color: transparent;
+}
+
+.avatar:hover {
+    transform: scale(1.2);
+}
+
+.notifications:hover {
+    transform: scale(1.1);
+}
+
+.avatar-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    object-fit: cover;
+}
