@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>WitFlix</title>
+    <title>WitFlix</title>,
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">,
 </head>
 <body>
     <header class="header-box">
-        <img src="./icon images/WitFlix.png" alt="Witflix Logo" class="witflix-logo">
+        <img src="./iconimg/WitFlix.png" alt="Witflix Logo" class="witflix-logo">
         <nav class="header-nav">
             <a href="#">Topic 1</a>
             <a href="#">Topic 2</a>
@@ -17,16 +18,209 @@
         </nav>
         <div class="search-div">
             <input type="text" placeholder="Search" class="search-box">
-            <img src="./icon images/search-icon.png" alt="Search Icon" class="search-icon">
-            <img src="./icon images/indir.png" alt="Notifications" class="notifications">
+            <img src="./iconimg/search-icon.png" alt="Search Icon" class="search-icon">
+            <img src="./iconimg/indir.png" alt="Notifications" class="notifications">
             <div class="avatar-container">
                 <button class="avatar">
-                    <img src="./icon images/profil.jpeg" alt="User Avatar" class="avatar-img">
+                    <img src="./iconimg/profil.jpeg" alt="User Avatar" class="avatar-img">
                 </button>
                 </div>
             </div>
         </div>
+    </header>
+   
+    <main>
+        <div class="content">
+            <h1 class="hero-name">MOVİ NAME</h1>
+            <div class="hero-detail">
+                    <span class="stars"> ★★★★★</span>
+                    <span class="imdb-rating">7.7 IMDB</span>
+                    <span class="age-restriction">18+</span>
+                    <span class="duration">2 h 07 min</span>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum inventore voluptatem aperiam eaque? Dolor eaque unde facilis est totam, 
+            in voluptatum, animi laboriosam illo error iusto fuga non! Doloremque, tenetur..</p>
+        <div class="sgt">
+            <ul>
+                <li><p>Staring:</p></li>
+                <li><p>Genre:</p></li>
+                <li><p>Tags:</p></li>
+            </ul>
+        </div>
+        <button class="play-button"><i class="fas fa-play"></i>Play</button>
+        </div>
+    </main>
+    
+    <section title="Popular and Recommended">
+        <div class="popular-movies">
+            <div class="section-header">
+            <h2>Popular Movies</h2>
+            <a href="#" class="view-all">View All</a>
+            </div>
 
-    </header>
+            <div class="movie-grid">
+            <!-- Movie Card 1 -->
+                <div class="movie-card">
+                    <div class="movie-card-content">
+                    <h3>Movie Name 1</h3>
+                    <span class="card-details">
+                        <p class="details-age">16+</p>
+                        <p>2 h 21 min</p>
+                    </span>
+                    </div>
+                    <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                </div>
+
+        <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <div class="movie-card-content">
+                     <h3>Movie Name 2</h3>
+                        <span class="card-details">
+                            <p class="details-age">16+</p>
+                            <p>2 h 21 min</p>
+                        </span>
+                    </div>
+                    <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                </div>
+
+        <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <div class="movie-card-content">
+                    <h3>Movie Name 3</h3>
+                    <span class="card-details">
+                        <p class="details-age">16+</p>
+                        <p>2 h 21 min</p>
+                    </span>
+                    </div>
+                    <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section title="Recommended For You">
+        <div class="Recommended-For-You">
+            <div class="section-header">
+            <h2>Recommended For You</h2>
+            <a href="#" class="view-all">View All</a>
+            </div>
+
+                <div class="movie-grid">
+                <!-- Movie Card 1 -->
+                    <div class="movie-card">
+                        <div class="movie-card-content">
+                        <h3>Movie Name 1</h3>
+                        <span class="card-details">
+                            <p class="details-age">16+</p>
+                            <p>2 h 21 min</p>
+                        </span>
+                        </div>
+                        <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                    </div>
+
+            <!-- Movie Card 2 -->
+                <div class="movie-card">
+                    <div class="movie-card-content">
+                    <h3>Movie Name 2</h3>
+                    <span class="card-details">
+                        <p class="details-age">16+</p>
+                        <p>2 h 21 min</p>
+                    </span>
+                    </div>
+                    <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                </div>
+
+            <!-- Movie Card 3 -->
+                <div class="movie-card">
+                    <div class="movie-card-content">
+                    <h3>Movie Name 3</h3>
+                    <span class="card-details">
+                        <p class="details-age">16+</p>
+                        <p>2 h 21 min</p>
+                    </span>
+                    </div>
+                    <button class="play-button"><i class="fas fa-play"></i> Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section title="Upcoming Movies">
+        <div class="Upcoming-Movies">
+            <div class="section-header">
+            <h2>Upcoming Movies</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+
+        <div class="movie-grid">
+            <!-- Movie Card 1 -->
+            <div class="movie-card">
+                <div class="movie-card-content">
+                <h3>Movie Name 1</h3>
+                <span class="card-details">
+                    <p class="details-age">16+</p>
+                    <p>2 h 21 min</p>
+                </span>
+            </div>
+            <button class="play-button"><i class="fas fa-play"></i> Play</button>
+        </div>
+
+            <!-- Movie Card 2 -->
+        <div class="movie-card">
+            <div class="movie-card-content">
+                <h3>Movie Name 2</h3>
+                <span class="card-details">
+                    <p class="details-age">16+</p>
+                    <p>2 h 21 min</p>
+                </span>
+            </div>
+            <button class="play-button"><i class="fas fa-play"></i> Play</button>
+        </div>
+
+        <!-- Movie Card 3 -->
+            <div class="movie-card">
+                <div class="movie-card-content">
+                <h3>Movie Name 3</h3>
+                <span class="card-details">
+                    <p class="details-age">16+</p>
+                    <p>2 h 21 min</p>
+                </span>
+                </div>
+                <button class="play-button"><i class="fas fa-play"></i> Play</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-helps">
+            <div class="helps-nav">
+                <nav>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy-Policy</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Watch List</a>
+                </nav>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum architecto nihil illo ut velit aliquid.
+                Expedita quaerat natus voluptate aut accusantium? Laudantium placeat modi repudiandae corrupti delectus
+                accusamus sit officia.</p>
+        </div>
+        <div class="footer-socials">
+            <p>Follow Us</p>
+            <div class="social-icons">
+                <img src="./iconimg/facebook-icon.png" alt="WitFlix Facebook Page">
+                <img src="./iconimg/youtube-icon.png" alt="WitFlix Youtube Page">
+                <img src="./iconimg/twitter-icon.png" alt="WitFlix X Page">
+            </div>
+        </div>
+        <div class="apps">
+            <p>Apps</p>
+            <div class="apps-icons">
+                <img src="./iconimg/app-store-icon.png" alt="WitFlix on AppStore">
+                <img src="./iconimg/google-play-icon.png" alt="WitFlix on GooglePlay">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

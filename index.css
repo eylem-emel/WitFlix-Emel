@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 0 20px;
+}
+
 a {
     all: unset;
     text-decoration: none;
@@ -32,6 +36,7 @@ input {
 .witflix-logo {
     height: 50px;
     width: auto;
+    cursor: pointer;
 }
 
 .header-nav {
@@ -48,6 +53,7 @@ input {
     font-weight: 500;
     margin: 0 50px;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .header-nav a:hover {
@@ -136,4 +142,155 @@ input {
     height: 34px;
     border-radius: 100%;
     object-fit: cover;
+}
+
+/* PLAY BUTONLARI İÇİN */
+
+.play-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.play-button i {
+    margin-right: 5px;
+}
+
+/* MAİN BÖLÜMÜ */
+
+.content {
+    z-index: 3;
+    padding: 30px 25px;
+    width: 27%;
+    margin-left: 60px;
+}
+
+.description {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.stars {
+    color: red;
+}
+
+.imdb-rating,
+.age-restriction,
+.duration {
+    font-size: 12px;
+    margin: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    /* Biri sola, biri sağa yaslanır */
+    align-items: center;
+    /* Dikey ortalama */
+    margin: 20px 0;
+    /* Üst-alt boşluk */
+}
+
+/* MOVE CARDLAR */
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.movie-card {
+    flex: 1 1 30%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* tüm içeriği sola hizalar */
+}
+
+
+/* FOOTER BÖLÜMÜ */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: 14px;
+
+}
+
+/* Footer Yardım ve Bilgi Alanı */
+.footer-helps {
+    width: 40%;
+}
+
+.footer-helps nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+
+}
+
+.footer-helps a {
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: bold
+}
+
+.footer-helps a:hover {
+    color: #007bff;
+}
+
+.footer-helps p {
+    margin-top: 2vh;
+}
+
+/* Sosyal Medya ve İkonlar */
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-socials p {
+    margin-bottom: 1.2vh;
+    font-weight: bold;
+    margin-left: 1.6vw;
+}
+
+.footer-socials img {
+    width: 30px;
+    height: 26px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+/* Apps alanı */
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.apps p {
+    margin-bottom: 1vh;
+    font-weight: bold;
+    margin-left: 5.5vw;
+}
+
+.apps img {
+    width: 120px;
+    height: auto;
+    margin: 5px 0;
 }
